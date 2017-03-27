@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: dubbox provider
+
+server:
+  port: 8085
