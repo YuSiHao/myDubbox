@@ -16,8 +16,7 @@
 	<dubbo:protocol name="dubbo" port="20880" />
 
 	<dubbo:protocol name="rest" port="8000" threads="500"
-		server="tomcat" accepts="500" contextpath="services"
-		extension="com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter,net.aimeizi.exception.ValidationExceptionMapper" />
+		server="tomcat" accepts="500" />
 
 
 	<!-- 声明需要暴露的服务接口 -->
