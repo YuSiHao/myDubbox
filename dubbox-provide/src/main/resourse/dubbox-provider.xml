@@ -14,9 +14,11 @@
 
 	<!-- 用dubbo协议在20880端口暴露服务 -->
 	<dubbo:protocol name="dubbo" port="20880" />
-	
-	<!-- use tomcat server -->
-	<dubbo:protocol name="rest" accepts="500" server="tomcat" />
+
+	<dubbo:protocol name="rest" port="8000" threads="500"
+		server="tomcat" accepts="500" contextpath="services"
+		extension="com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter,net.aimeizi.exception.ValidationExceptionMapper" />
+
 
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="com.ysh.dubbox.api.DemoService"
