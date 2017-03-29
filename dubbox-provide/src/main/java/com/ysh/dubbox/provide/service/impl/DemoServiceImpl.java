@@ -1,8 +1,10 @@
 package com.ysh.dubbox.provide.service.impl;
 
+
 import org.springframework.stereotype.Service;
 
-import com.ysh.dubbox.api.DemoService;
+import com.ysh.dubbox.provide.service.DemoService;
+
 
 @Service
 public class DemoServiceImpl implements DemoService {
