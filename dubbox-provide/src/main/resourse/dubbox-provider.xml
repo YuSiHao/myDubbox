@@ -33,14 +33,15 @@
                     com.alibaba.dubbo.demo.extension.CustomExceptionMapper,
                     com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter" />
 
-	<dubbo:service interface="com.ysh.dubbox.provide.service.DemoService"
+	<!-- 声明需要暴露的服务接口 -->
+	<dubbo:service interface="com.ysh.dubbox.api.DemoService"
 		ref="demoService" protocol="dubbo" />
 
 	<dubbo:protocol name="http" port="8889" />
 	<dubbo:protocol name="hessian" port="8890" />
 	<dubbo:protocol name="webservice" port="8892" />
 
-
+	<!-- 和本地bean一样实现服务 -->
 	<bean id="demoService" class="com.ysh.dubbox.provide.service.impl.DemoServiceImpl">
 	</bean>
 

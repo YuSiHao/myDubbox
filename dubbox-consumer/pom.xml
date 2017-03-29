@@ -8,15 +8,14 @@
 		<artifactId>myDubbox</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
-	<artifactId>dubbox-provide</artifactId>
-	<name>dubbox-provide</name>
+	
+	<artifactId>dubbox-consumer</artifactId>
+	<name>dubbox-consumer</name>
 	<packaging>jar</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
 	<dependencies>
 
 		<dependency>
@@ -30,6 +29,6 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		
 	</dependencies>
 </project>

@@ -3,7 +3,8 @@ package com.ysh.dubbox.provide.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.ysh.dubbox.provide.service.DemoService;
+import com.ysh.dubbox.api.DemoService;
+
 
 
 @Service
