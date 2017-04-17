@@ -12,9 +12,9 @@
 
     <!--uncomment this if you want to test dubbo's monitor-->
     <!--<dubbo:monitor protocol="registry"/>-->
-
+	<!--  
     <dubbo:reference id="demoService" interface="com.ysh.dubbox.api.DemoService"/>
-    
+     -->
     <dubbo:reference id="userService" interface="com.ysh.dubbox.api.UserService"/>
     
     
