@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import com.ysh.dubbox.api.UserService;
 import com.ysh.dubbox.api.model.User;
@@ -12,6 +13,9 @@ import com.ysh.dubbox.api.model.User;
 @RestController
 @RequestMapping("/user")
 public class HelloController {
+	
+	@Autowired
+	private RestTemplate restTemplate;
 
 	@Autowired
 	private UserService userService;
@@ -28,5 +32,6 @@ public class HelloController {
 		user.setName("jack");
 		return userService.create(user);
 	}
+	
 
 }

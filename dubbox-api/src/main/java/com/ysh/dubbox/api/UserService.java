@@ -17,7 +17,7 @@ import com.ysh.dubbox.api.model.User;
 public interface UserService {
 	
 	@GET
-    @Path("")
+    @Path("findall")
 	List<User> findAll();
 	
 	@POST
